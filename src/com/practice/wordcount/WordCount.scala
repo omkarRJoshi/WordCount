@@ -5,7 +5,7 @@ import org.apache.spark.SparkContext
 
 object WordCount {
   def main(args : Array[String]){
-    val sparkConf = new SparkConf() //
+    val sparkConf = new SparkConf() //creating object of SparkConf
     //now setting app name and master
     sparkConf.setAppName("wordCountProgram").setMaster("local[*]") // local[*] Run Spark locally with as many worker threads as logical cores on your machine.
     
